@@ -1,0 +1,18 @@
+{
+  "name": "todong",
+  "version": "1.0.0",
+  "description": "to do list made using angularJS for front end",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Daniels",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "sequelize": "^4.22.7"
+  }
+}
