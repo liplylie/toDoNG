@@ -5,7 +5,7 @@
 	<p>{{text}}</p>
 	<ul>
 		<li ng-repeat='todo in $ctrl.todos'>
-		{{todo}}
+		{{todo}} <button ng-click="$ctrl.deleteTodo(todo)">delete</button>
 		</li>
 	</ul>
 </div>
