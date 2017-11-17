@@ -12,53 +12,34 @@
 </head>
 <body >
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"><img id="pic" src="https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2015-12-26/17403075280_024490441c688e6ab5f8_512.png"/></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <nav-tab>hi</nav-tab>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1 id="title">To Do List</h1>
-      <input type="text" ng-model='text'/>
-      <p>{{text}}</p>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
+  <nav-bar></nav-bar>
+    
+  <div class="container-fluid text-center">    
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <p><a href="#">Link</a></p>
+        <p><a href="#">Link</a></p>
+        <p><a href="#">Link</a></p>
       </div>
-      <div class="well">
-        <p>ADS</p>
+      <todos></todos>
+      <div class="col-sm-2 sidenav">
+        <div class="well">
+          <p>ADS</p>
+        </div>
+        <div class="well">
+          <p>ADS</p>
+        </div>
       </div>
     </div>
+    
   </div>
-  
-</div>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
-<script src="components/index.js"></script>
-<script src="components/navTab.js"></script>
+  <footer class="container-fluid text-center">
+    <p>Footer Text</p>
+  </footer>
+  <script src="components/index.js"></script>
+  <script src="components/navTab.js"></script>
+  <script src="components/navBar.js"></script>
+  <script src="components/todos.js"></script>
 </body>
 </html>
