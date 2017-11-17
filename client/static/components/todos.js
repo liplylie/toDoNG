@@ -1,12 +1,13 @@
 angular.module('todo')
 .component('todos', {
-	controller: function(){
-		this.todos = [];
-		this.addTodo = function(todo){
-			this.todos.push(todo)
+	controller: function($scope){
+		$scope.todos = [];
+		$scope.addTodo = function(todo){
+			$scope.todo = null
+			$scope.todos.push(todo)
 		},
-		this.deleteTodo = function(todo){
-			this.todos.splice(this.todos.indexOf(todo), 1)
+		$scope.deleteTodo = function(todo){
+			$scope.todos.splice($scope.todos.indexOf(todo), 1)
 		}
 	},
 	templateUrl: './templates/todos.html'
