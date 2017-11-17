@@ -7,7 +7,9 @@ angular.module('todo')
 			$scope.todos.push(todo)
 		},
 		$scope.deleteTodo = function(todo){
-			$scope.todos.splice($scope.todos.indexOf(todo), 1)
+			$scope.todos = $scope.todos.filter(item => {
+				item !== todo
+			})
 		}
 	},
 	templateUrl: './templates/todos.html'
